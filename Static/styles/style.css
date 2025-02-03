@@ -1,6 +1,13 @@
 span {
-    font-style: italic;
-    background-color: rgb(0, 0, 0);
-    color: chocolate;
-  
+  font-style: italic;
+  background-color: rgb(0, 0, 0);
+  color: chocolate;
+}
+.bold-text {
+  color: aqua;
+  font-weight: bold;
+}
+
+.main-content {
+  list-style: lower-greek;
 }
