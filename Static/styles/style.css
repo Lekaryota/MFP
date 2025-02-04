@@ -1,3 +1,8 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
 span {
   font-style: italic;
   background-color: rgb(0, 0, 0);
@@ -8,14 +13,15 @@ span {
   font-weight: bold;
 }
 
+/* Панель содержания */
 .main-content {
   list-style: lower-greek;
 }
 
 .list-conteiner {
-  border-width: 0.5px;
   display: inline-block;
   border-style: solid;
+  border-width: 0.5px;
   padding-right: 20px;
   padding-left: 20px;
 }
@@ -24,11 +30,96 @@ span {
   text-align: center;
   font-weight: bold;
 }
+/* Панель содержания */
 
+/* Блок с лого */
 .img-conteiner {
   float: right;
   padding: 5px;
   border-style: solid;
   border-width: 0.5px;
   margin: 10px;
+}
+
+.img-conteiner > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.DARPA-logo {
+  max-width: 100px;
+}
+/* Блок с лого */
+
+/* Навигационная панель */
+.nav-conteiner {
+  display: flex;
+  justify-content: space-between;
+  background-color: gray;
+}
+
+.nav-conteiner > nav > ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+.nav-conteiner > nav > ul > li {
+  /* ?? Это дело нужно поправить*/
+}
+
+.nav-conteiner > nav > ul > li > a {
+  display: block;
+  padding: 10px;
+  border-style: solid;
+  border-width: 0.5px;
+  max-width: 100%;
+}
+/* Навигационная панель */
+
+/* медиа-запрос?? */
+@media (max-width: 900px) {
+  .nav-conteiner {
+    flex-direction: column;
+  }
+}
+/* медиа-запрос?? */
+
+.page {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.section {
+  width: 82%;
+}
+/* Боковая часть */
+.aside {
+  width: 14%;
+  background-color: gray;
+  border-style: dotted;
+}
+
+.aside > ol {
+  list-style: none;
+  border-bottom-style: solid;
+  border-width: 0.5px;
+  margin: 10px;
+  padding: 0;
+  padding-bottom: 10px;
+}
+
+.aside > div {
+  width: 100%;
+}
+
+.aside > div > img {
+  width: 100%;
+}
+/* Боковая часть */
+
+.text-page {
+  padding-left: 15px;
 }
